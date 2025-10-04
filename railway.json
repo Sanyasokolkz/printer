@@ -1,6 +1,9 @@
 {
   "$schema": "https://railway.app/railway.schema.json",
-  "build": "Dockerfile",
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile"
+  },
   "start": "python main.py",
   "healthcheckPath": "/",
   "restartPolicyType": "ON_FAILURE",
